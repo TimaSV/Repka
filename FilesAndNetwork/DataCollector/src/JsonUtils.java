@@ -21,7 +21,7 @@ public class JsonUtils {
         try {
             Object obj = new JSONParser().parse(new FileReader(file));
             JSONArray jo = (JSONArray) obj;
-            if (file.getName().toLowerCase().startsWith("depths")) {    //убрал s
+            if (file.getName().toLowerCase().startsWith("depths")) {   
                 jo.forEach(depthObject -> {
                     JSONObject depthJsonObject = (JSONObject) depthObject;
                     for (Map.Entry<String, ArrayList<Station>> entry : DataClass.mapLineNumberToStations.entrySet()) {
