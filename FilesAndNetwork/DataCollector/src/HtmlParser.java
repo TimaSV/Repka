@@ -8,11 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HtmlParser {
-   // private static final String htmlFile = "data1/code.html";
-    // private static final String DATA_FILE = "src/main/resources/map.json";
-
-
-
+   
     public static void metroHTMLParser() {
         try {
             String htmlFile = parseFile("E:\\Repozitoriy\\dpo_java_basics\\FilesAndNetwork\\DataCollector\\data1\\code.html");
