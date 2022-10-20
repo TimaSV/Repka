@@ -8,7 +8,6 @@ public class Main {
     public static void main(String[] args) {
         HtmlParser.metroHTMLParser();
         FileFinder.startSearch("C:\\skillbox\\java_basics\\FilesAndNetwork\\DataCollector\\data");
-        // FileFinder.startSearch("E:\\Repozitoriy\\dpo_java_basics\\FilesAndNetwork\\DataCollector\\data1\\code.html");
         System.out.println(DataClass.mapLineNumberToStations);
         JsonUtils.CreateJsonFile();
     }
