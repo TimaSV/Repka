@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+      generate-ddl: true
+      show-sql: true
+    open-in-view: true
+  thymeleaf:
+    enabled: true
+    encoding: UTF-8
+  datasource:
+    url: jdbc:mysql://localhost:3306/search_engine
+    useSSL: false
+    allowPublicKeyRetrieval: true
+    username: root
+    password: JopaTest1937098167kot_145
+
+logging:
+  level:
+    root: INFO
+  file.name: logs/info.log
+
+
+config:
+  sites:
+    - url: https://6fwear.com
+      name: 6fwear
+      pause: 0
+    - url: https://www.lenta.ru
+      name: Lenta
+      pause: 0
+    - url: https://lada-54.ru
+      name: Lada-54
+      pause: 0
